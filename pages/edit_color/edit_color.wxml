@@ -1,0 +1,3 @@
+<view class="brand" wx:for="{{color}}" bindtap="addcar" data-cs_name="{{item.NAME}}">
+{{item.NAME}}
+</view>

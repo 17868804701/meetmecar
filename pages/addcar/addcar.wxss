@@ -1,0 +1,33 @@
+.r {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 38px;
+  line-height: 38px;
+  background-color: #0072b9;
+  font-size: 35rpx;
+}
+
+page {
+  background-color: whitesmoke;
+}
+
+.carNo input {
+  height: 30px;
+  line-height: 30px;
+  width: 60%;
+  padding-left: 10px;
+  background-color: white;
+}
+
+.carNo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 40px;
+  background-color: white;
+}

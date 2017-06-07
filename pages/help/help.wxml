@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="zan-panel ">
+    <view class="zan-card'">
+      <view class="zan-card__thumb head_img">
+        <image class="zan-card__img" src="../image/store_logo.jpg" mode="aspectFit" style="border-radius:30px;width:60px;height:60px;margin-top:15px;"></image>
+      </view>
+    <view class="name">
+      <text>{{name}}</text>
+    </view>
+    <view class="choose" bindtap="choose">
+      <text>选择门店</text>
+    </view>
+    <view class="address">
+      <text>{{address}}</text>
+    </view>
+    <view class="call_phone" bindtap="callPhone">
+    <image src="../image/u265.png"></image>
+    </view>
+     <text class="help_title">一键救援</text>
+    </view>
+  </view>
+</view>

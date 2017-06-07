@@ -1,0 +1,13 @@
+<!--pages/account_info/account_info.wxml-->
+<!--账户信息-->
+<view class="none" wx:if="{{length==0}}">
+---    您还没有消费记录   ---
+</view>
+<view class="container" wx:for="{{item}}">
+  <view class="zan-panel">
+    <view style="padding:13px 6px 13px 20px;border-bottom:1px solid gainsboro">{{item.storeName}}</view>
+    <view style="padding:8px 6px 4px 20px;">下单时间：
+    {{item.time}}<text class="price"><text style="color:orange" wx:if="{{item.type=='充值'}}">{{item.fee}}元</text><text style="color:#0072b9" wx:if="{{item.type=='消费'}}">{{item.fee}}元</text></text></view>
+      <view style="padding:4px 6px 13px 20px;border-bottom:0px solid gainsboro">类型：{{item.type}}</view>
+  </view>
+</view>

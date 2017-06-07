@@ -1,0 +1,98 @@
+<view class="zan-panel head_img" bindtap="store_info" style="  position: fixed;top: 0;width:100%;z-index:100">
+  <view class="zan-card">
+    <view class="zan-card__thumb">
+      <image class="zan-card__img" src="../image/store_logo.jpg" mode="aspectFit" style="width:65px;height:65px;margin-top:-3px;"></image>
+    </view>
+    <text class="storeName">{{name}}</text>
+    <text class="address">地址：{{address}}</text>
+    <text class="time">营业时间：{{stBusinessHour}}</text>
+    <text class="map" bindtap="showMap">查看地图</text>
+    <text class="gonggao">公告：{{stNotice}}</text>
+  </view>
+</view>
+<view class="body">
+  <view class="nav bc_white" style=" position: fixed;top: 230rpx;;width:100%;z-index:100">
+    <view class="{{selected?'red':'default'}} title" bindtap="selected">购买套餐</view>
+    <view class="{{selected1?'red':'default'}} title" bindtap="selected1">查看服务</view>
+    <view class="{{selected2?'red':'default'}} title" bindtap="selected2">查看商品</view>
+    <view class="{{selected3?'red':'default'}} title" bindtap="selected3">评价</view>
+  </view>
+
+  <!--购买套餐-->
+  <view class="{{selected?'show':'hidden'}}" style="margin-top:320rpx">
+    <view class="classname" wx:if="{{item1.length==0}}" style="color:gray;font-size:30rpx; ">
+      亲，本店目前还没有套餐
+    </view>
+    <view style="background-color:white;height:90px;border-bottom: 1px solid whitesmoke" wx:for="{{item1}}">
+      <image class="tc_image" src="../image/store_logo.jpg" style="width:70px;height:70px;"></image>
+      <view class="tc_name" bindtap="show" data-text="{{str}}">{{item.title}}</view>
+      <view class="tc_content" bindtap="show" data-text="{{str}}">
+        <text>{{str}}</text>
+      </view>
+      <view class="tc_price" bindtap="show" data-text="{{str}}">
+        <text>￥{{item.value}}元</text>
+      </view>
+      <button class="buy" data-value="{{item.value}}" data-id="{{item.id}}" bindtap="buy">购买</button>
+    </view>
+  </view>
+
+  <!--查看服务-->
+  <view class="{{selected1?'show':'hidden'}}" style="margin-top:320rpx">
+    <!--服务tab标签-->
+    <view class="tab">
+      <view class="tab-left" style="position: fixed;top:320rpx;">
+        <view id="tab-hd01" style="" class="{{tabArr.curHdIndex==item.bcId? 'active' : ''}}" wx:for="{{item2}}" bindtap="tabFun_service" data-fyid="{{item.bcId}}">{{item.bcName}}</view>
+      </view>
+      <view class="classname" wx:for="{{item2}}" style="float:right;width:79%;">
+        <view class="tab-right" wx:for="{{item.storeBussiness}}">
+          <view class="right-item  {{active}} {{tabArr.curBdIndex==item.bc_id? 'active' : ''}}" data-fyid="{{item.bc_id}}">
+            <image src="../image/store_logo.jpg"></image>
+            <view class="name">
+              <text>{{item.stb_name}}</text>
+            </view>
+            <text class="price">￥{{item.stb_price}}元</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--查看商品-->
+  <view class="{{selected2?'show':'hidden'}}" style="margin-top:320rpx">
+    <!--商品tab标签-->
+    <view class="tab">
+      <view class="tab-left" style="position: fixed;top:320rpx;">
+        <view id="tab-hd01" class="{{tabArr.curHdIndex==item.fyId? 'active' : ''}}" wx:for="{{item3}}" bindtap="tabFun" data-fyid="{{item.fyId}}">{{item.fyName}}</view>
+      </view>
+      <view class="classname" wx:for="{{item3}}" style="float:right;width:79%;">
+        <view class="tab-right" wx:for="{{item.goodsList}}">
+          <view class="right-item  {{active}} {{tabArr.curBdIndex==item.fy_id? 'active' : ''}}" data-fyid="{{item.fy_id}}">
+            <image src="../image/store_logo.jpg"></image>
+            <view class="name">{{item.goods_name}}</view>
+            <text class="price">￥{{item.goods_sell_price}}元</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--评价-->
+  <view class="{{selected3?'show':'hidden'}}" style="margin-top:320rpx">
+    <view class="zan-panel head_img produce_info" wx:for="{{assess}}" style="height:60px;">
+      <view class="zan-card">
+        <view class="zan-card__thumb">
+          <image class="zan-card__img" src="../image/store_logo.jpg" mode="aspectFit" style="width:28px;height:28px;margin-top:5px;border-radius:14px"></image>
+        </view>
+        <text class="assess_user">{{item.mb_name}}</text>
+        <text class="assess_stars">
+          <text wx:if="{{item.ore_score=='5'}}">★★★★★</text>
+          <text wx:if="{{item.ore_score=='4'}}">★★★★</text>
+          <text wx:if="{{item.ore_score=='2'}}">★★</text>
+          <text wx:if="{{item.ore_score=='3'}}">★★★</text>
+          <text wx:if="{{item.ore_score=='1'}}">★</text>
+        </text>
+        <text class="assess_content">{{item.ore_keyword}}</text>
+        <text class="assess_time">{{item.ord_create_time}}</text>
+      </view>
+    </view>
+  </view>
+</view>

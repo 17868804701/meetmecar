@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/loading/loading",
+    "pages/order_info/order_info",
+    "pages/my_wallet/my_wallet",
+    "pages/car_service/car_service",
+    "pages/index/login",
+    "pages/help/help",
+    "pages/vip_center/vip_center",
+    "pages/store_info/store_info",
+    "pages/content/content",
+    "pages/changePhone/changePhone",
+    "pages/assess/assess",
+    "pages/editCar_ok/editCar_ok",
+    "pages/person/person",
+    "pages/search/search",
+    "pages/edit_search/edit_search",
+    "pages/edit_chexing/edit_chexing",
+    "pages/edit_color/edit_color",
+    "pages/chexing/chexing",
+    "pages/color/color",
+    "pages/addcar/addcar",
+    "pages/mycar/mycar",
+    "pages/star/star",
+    "pages/choose_store/choose_store",
+    "pages/chongzhi/chongzhi",
+    "pages/editCar/editCar",
+    "pages/tousu/tousu",
+    "pages/my_card/my_card",
+    "pages/account_info/account_info",
+    "pages/order/order",
+    "pages/card_info/card_info"
+  ],
+  "window": {},
+  "tabBar": {
+    "selectedColor": "#0072b9",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "pages/image/m2.png",
+        "iconPath": "pages/image/m1.png",
+        "pagePath": "pages/car_service/car_service",
+        "text": "车辆服务"
+      },
+      {
+        "selectedIconPath": "pages/image/s1.png",
+        "iconPath": "pages/image/s2.png",
+        "pagePath": "pages/my_wallet/my_wallet",
+        "text": "我的钱包"
+      },
+      {
+        "selectedIconPath": "pages/image/m5.png",
+        "iconPath": "pages/image/m6.png",
+        "pagePath": "pages/vip_center/vip_center",
+        "text": "会员中心"
+      }
+    ]
+  }
+}

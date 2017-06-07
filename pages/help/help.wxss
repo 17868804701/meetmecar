@@ -1,0 +1,42 @@
+.head_img{
+     display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ margin-top: 20px;
+}
+.name,.choose,.address{
+         display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ margin-top: 20px;
+}
+.call_phone{
+    border-top: 1px solid gainsboro;
+    margin-top: 40px;
+         display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+}
+.call_phone image{
+    width: 50px;
+    height: 50px;
+    margin-top: 40px;
+}
+.help_title{
+   display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ margin-top:70px;
+ font-size: 17px;
+ font-weight: bold;
+}
+.name text,.address text,.choose text{
+    font-size: 14px;
+}
+.choose text{
+    color: #0072b9;
+}

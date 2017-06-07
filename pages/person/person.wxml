@@ -1,0 +1,43 @@
+<view class="container">
+  <!--头像-->
+  <view class="zan-panel head_img" bindtap="person">
+    <view class="zan-card">
+      <view class="zan-card__thumb">
+        <image class="zan-card__img user_img" src="{{imgurl}}" mode="aspectFit"></image>
+      </view>
+      <text class="name">{{name}}</text>
+      <text class="tel">{{phone}}</text>
+      <text class="vip">{{grade}}</text>
+      <text class="changePhone" bindtap="changePhone">更换手机号</text>
+    </view>
+  </view>
+
+<view class="carNo" style="margin-top:0rpx;">
+  <text style="margin-left:-50rpx;float:left">姓名：</text>
+  <input type="text" placeholder-style="font-size:14px;" bindinput="inputname" value='{{name}}'/>
+</view>
+
+<view class="carNo"  style="margin-top:5rpx;">
+ <text class="sex" style="margin-left:-360rpx;float:left">性别：</text>
+ <radio-group >
+  <radio value="value" checked="{{sex=='男'}}"  style="zoom:70%;"color="#f2a92e" bindtap="nan"/>男
+  <radio value="value" checked="{{sex=='女'}}" style="zoom:70%;"color="#f2a92e" bindtap="nv"/>女
+  </radio-group>
+</view>
+
+
+<view class="carNo"  style="margin-top:5rpx;">
+  <view class="section">  
+    <picker mode="date" value="{{date}}" start="1890-01-01" end="2257-1-23" bindchange="bindDateChange"> 
+      <view class="picker birthday" style="margin-left:-305rpx;">  
+        <text style="font-size:30rpx;">生日：</text>
+        <text wx:if="{{date1==''}}">{{date}}</text>
+        <text wx:if="{{date1!=''}}">{{date1}}</text>
+      </view>  
+    </picker>  
+  </view>  
+</view>
+<view class="section" style="margin-top:20px;">
+  <button type="default" class="r" style="background-color: #0072b9;color:white;margin-bottom:20px;" bindtap="edit">{{edit}}</button>
+</view>
+</view>

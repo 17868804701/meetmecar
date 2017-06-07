@@ -1,0 +1,106 @@
+/* pages/mycar/mycar.wxss */
+.zan-panel {
+  background: #fff;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.zan-panel-title {
+  font-size: 14px;
+  line-height: 1;
+  color: #999;
+  padding: 20px 15px 0 15px;
+}
+.zan-panel--without-margin-top {
+  margin-top: 0;
+}
+page{
+    background-color: whitesmoke;
+    font-size: 15px;
+}
+.update{
+    font-size: 12px;
+    width: 80px;
+    line-height: 35px;
+    height: 35px;
+    float: right;
+    margin-top: -30px;
+    border:1px solid #0072b9;
+    color: #0072b9;
+      right: 10px;
+}
+.delte{
+        right: 5px;
+    font-size: 12px;
+    width: 80px;
+    line-height: 35px;
+    height: 35px;
+    float: right;
+    margin-top: -30px;
+    border:1px solid orange;
+    color: #0072b9;
+}
+.zan-panel{
+    margin-top: 20px;
+}
+.checkbox-group{
+    margin-left: 13px;
+}
+.r{
+ display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ width:90%;height:38px;line-height:38px;
+ background-color: #0072b9;
+ font-size: 35rpx;
+}
+
+.zan-form {
+  background-color: #fff;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.zan-form__item {
+  line-height: 26px;
+}
+
+.zan-form__title {
+  float: left;
+  width: 80px;
+  font-size: 14px;
+}
+
+.zan-form__title--top {
+  align-self: flex-start;
+}
+
+.zan-form__input, .zan-form__textarea {
+  min-height: 26px;
+}
+
+.zan-form__input input {
+  min-height: 26px;
+}
+
+.zan-form__textarea {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+.zan-form__textarea textarea {
+  width: auto;
+  flex: 1;
+}
+
+.edit{
+    display: flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+}
+.zan-form__title{font-size: 12px;}

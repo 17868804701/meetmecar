@@ -1,0 +1,90 @@
+.time{
+  height: 80rpx;
+  width: 100%;
+  border-bottom: 1px solid whitesmoke;
+  line-height: 80rpx;
+    background-color: white;
+}
+page{
+  font-size: 30rpx;
+  background-color: whitesmoke;
+}
+.status{
+  margin-left: 20rpx;
+  float: left;
+}
+.order_time{
+  float: right;
+  margin-right: 20rpx;
+
+}
+.store_name{
+    height: 80rpx;
+  width: 100%;
+  border-bottom: 1px solid whitesmoke;
+  line-height: 80rpx;
+    background-color: white;
+
+}
+.store_name text{
+  margin-left: 20rpx;
+}
+.list{
+    background-color: white;
+  height: 80rpx;
+  width: 100%;
+  border-bottom: 1px solid whitesmoke;
+  line-height: 80rpx;
+}
+.right{
+  float: right;
+  margin-right: 20rpx;
+}
+.left{
+    margin-left: 20rpx;
+  float: left;
+}
+.price{
+  color: orange;
+}
+.total_price{
+    float: right;
+  margin-right: 20rpx;
+  font-weight: bold;
+  color: orange;
+}
+.qian{
+  margin-left: 20rpx;
+  float: left;
+}
+.image{
+    background-color: white;
+}
+image{
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 28rpx;
+}
+
+
+
+.tousu{
+ display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ color: #0072b9;
+ font-size: 14px;
+ margin-top: 20px;
+ margin-bottom: 30px;
+}
+.tip{
+height: 100rpx;
+width: 100%;
+line-height: 100rpx;
+text-align: center;
+background-color: whitesmoke;
+}
+.tip text{
+  font-size: 25rpx;
+}

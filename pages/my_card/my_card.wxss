@@ -1,0 +1,64 @@
+/* pages/my_card/my_card.wxss */
+/* pages/order/order.wxss */
+/* pages/mycar/mycar.wxss */
+.zan-panel {
+  background: #fff;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.zan-panel-title {
+  font-size: 14px;
+  line-height: 1;
+  color: #999;
+  padding: 20px 15px 0 15px;
+}
+.zan-panel--without-margin-top {
+  margin-top: 0;
+}
+page{
+    background-color: whitesmoke;
+    font-size: 30rpx;
+}
+
+.zan-panel{
+    margin-top: 20px;
+}
+.discount{
+    color: orange;
+    float: right;
+    margin-top: -20px;
+    font-size: 24px;
+    margin-left:40px;
+
+}
+.address{
+    float:right;right:10px;
+}
+.title_left{
+float: left;
+margin-left:14px;
+margin-top: 5px;
+margin-bottom: 20px;
+}
+.discount_title{
+    font-size: 24px;
+    color: orange;
+    float: right;
+    margin-top: 0px;
+}
+.none{
+flex-direction:row;
+justify-content: space-around;
+ align-items: center;
+ text-align: center;
+ margin-top: 100px;
+ color: #888;
+ background-color: white;
+ height: 100px;
+ line-height: 100px;
+ width: 80%;
+ margin-left: 10%
+}

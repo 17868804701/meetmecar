@@ -1,0 +1,48 @@
+
+<!--pages/my_wallet/my_wallet.wxml-->
+<view class="header">
+  <view class="price_icon" bindtap="chongzhi">
+    <image src="../image/qian.png"></image>
+  </view>
+  <view class="price_icon" bindtap="my_card">
+    <image src="../image/folder.png"></image>
+  </view>
+</view>
+<view class="header_title">
+  <view class="price_icon title" bindtap="chongzhi">
+    {{balance}}元
+  </view>
+  <view class="price_icon title" bindtap="my_card">
+    我的卡包
+  </view>
+</view>
+
+<!--处理订单-->
+<view class="update_order">
+  <text class="update_order1">处理订单</text>
+</view>
+<!--立即支付-->
+<view class="none" wx:if="{{length==0}}">
+    <text>---   目前还没有需要处理的订单   ---</text>
+</view>
+<view class="container" wx:for="{{item}}">
+  <view class="zan-panel">
+    <view bindtap="order_info" data-orderId="{{item.orderId}}">
+      <view class="orderNo">订单号：{{item.orderNo}}
+        <text class="address">{{item.storeName}}</text>
+      </view>
+      <view class="carNo">车牌号：{{item.carNo}}</view>
+      <view class="createTime">
+        下单时间：{{item.createTime}}
+      </view>
+      <view class="orderStatus">订单状态：{{item.orderStatus}}</view>
+    </view>
+    <view class="white">
+      <text class="price">￥{{item.money}}元</text>
+      <view class="section btn_price_view">
+    <button type="default" hover-class="other-button-hover" class="pay" style="background-color: #459ae9;color:white" wx:if="{{item.orderStatus=='待支付'}}" data-orderId="{{item.orderId}}" data-storeId="{{item.storeId}}" data-storeName="{{item.storeName}}"  data-money="{{item.money}}" bindtap="pay">立即支付</button>
+        <button type="default" hover-class="other-button-hover" class="pay" style="background-color: #459ae9;color:white" wx:if="{{item.orderStatus=='待评价'}}" data-orderId="{{item.orderId}}" data-storeId="{{item.storeId}}" data-storeName="{{item.storeName}}"  data-money="{{item.money}}" bindtap="pingjia">立即评价</button>
+      </view>
+    </view>
+  </view>
+</view>

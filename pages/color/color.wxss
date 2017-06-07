@@ -1,0 +1,12 @@
+/* pages/color/color.wxss */
+.brand{
+    background-color: white;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
+page{
+    /*background-color: whitesmoke;*/
+    font-size: 30rpx;
+}

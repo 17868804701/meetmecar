@@ -1,0 +1,8 @@
+<view class="main" wx:for="{{item}}">
+  <view class="title">
+ {{item.csc_name}}
+  </view>
+  <view class="content" wx:for="{{item.secondList}}" data-cs_name="{{item.cs_name}}" bindtap="addcar">
+  {{item.cs_name}}
+  </view>
+</view>

@@ -1,0 +1,31 @@
+<view class="page">
+  <view class="page__hd">
+    <text class="page__desc">美容券</text>
+  </view>
+  <view class="page__bd">
+    <view class="section section_gap">
+      <view class="section__ctn">
+        <image style="width: 170px; height: 170px; background-color: #eeeeee;" src="../image/er.png"></image>
+      </view>
+    </view>
+  </view>
+   <view class="card_num">
+    <text class="page__desc">卡券号：GX-1225452210</text>
+  </view>
+</view>
+
+  <view class="info_1">
+    <text class="page__desc">免费美容一次</text>
+  </view>
+    <view class="info_2">
+    <text class="page__desc">2016-8-17至2017-8-12</text>
+  </view>
+      <view class="info_3">
+    <text class="page__desc">仅限每天美车高新店使用</text>
+  </view>
+      <view class="info_4">
+    <text class="page__desc">西安市雁塔区团结南路像响塘广场113号<text style="color:orange">查看地图>></text></text>
+  </view>
+      <view class="info_5">
+    <text class="page__desc">联系电话：029-81339354</text>
+  </view>

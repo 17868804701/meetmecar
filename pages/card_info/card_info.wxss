@@ -1,0 +1,47 @@
+
+ .page__bd,.page__hd{
+ display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
+ }
+ .page__hd{
+     margin-top: 50px;
+     color: #0072b9;
+ }
+ .card_num{
+     display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+font-size: 12px;
+ }
+ .info_1, .info_2, .info_3, .info_4, .info_5{
+display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ font-weight: bold;
+ color: gray;
+ }
+ .info_1{
+     font-size: 15px;
+     margin-top: 20px;
+ }
+ .info_2{
+     font-size: 13px;
+     margin-top: 5px;
+ }
+ .info_3{
+      font-size: 13px;
+      margin-top: 5px;
+ }
+ .info_4{
+     margin-top: 40px;
+     font-size: 15x;
+ }
+ .info_5{
+     font-size: 14px;
+     margin-top: 10px;
+ }

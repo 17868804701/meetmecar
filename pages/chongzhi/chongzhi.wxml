@@ -1,0 +1,22 @@
+
+<!--显示余额-->
+<view class="body-view">
+  <text>
+    <text class="title">余额:   </text>
+    <text class="price">¥{{price}}元</text>
+  </text>
+</view>
+<!--充值文本框-->
+<view class="section input_price">
+  <input type="digit" placeholder="手动输入充值金额"  class="add_price" bindinput="balance" maxlength="5" value='{{value}}' />
+</view>
+{{name}}
+<!--价格选项-->
+<view class="Price" wx:for="{{items}}">
+  <button type="default" hover-class="other-button-hover" bindtap="btn" data-price='{{item.price}}' class="btn_price" style="border:1px solid #0072b9;color:#0072b9;background-color:white">{{item.price}}元</button>
+</view>
+
+<!--立即充值-->
+<view class="section" style="margin-top:20px;">
+  <button type="default" class="r" style="background-color: #0072b9;color:white" bindtap="pay">立即充值</button>
+</view>

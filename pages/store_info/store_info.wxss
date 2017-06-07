@@ -1,0 +1,413 @@
+/* pages/car_service/car_service.wxss */
+@import '../../assets/styles/weui.wxss';
+@import '../../assets/styles/skyvow.wxss';
+
+.header {
+  height: 80px;
+  background-color: #0072b9;
+}
+
+.address {
+  color: white;
+  float: left;
+  margin: 10px 0 0 40px;
+}
+
+.nav image {
+  width: 23px;
+  height: 20px;
+  position: absolute;
+  float: left;
+  margin: 12px 0 0 17px;
+}
+
+.search {
+  border: 1px solid white;
+  background-color: white;
+  padding: 4px 0 4px 10px;
+  width: 100%;
+  margin: 0 20px 0 20px;
+}
+
+page {
+  font-size: 15px;
+  background-color: white;
+}
+
+.tel {
+  /*border-radius: 5px;*/
+  margin: 43px 20px 10px 20px;
+  /*margin-top: -50px;*/
+  position: absolute;
+  width: 80%;
+  background-color: white;
+  border: 1px solid white;
+  padding: 3px 3px 3px 25px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.weather {
+  float: right;
+  margin: 10px 10px 0 0;
+  color: white;
+}
+
+.zan-card {
+  margin-left: 0px;
+  width: auto;
+  padding: 5px 15px;
+  overflow: hidden;
+  position: relative;
+  font-size: 14px;
+}
+
+.zan-card__thumb {
+  width: 90px;
+  height: 90px;
+  float: left;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.zan-card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.zan-card__detail {
+  margin-left: 100px;
+  width: auto;
+  position: relative;
+}
+
+.zan-card__detail-row {
+  overflow: hidden;
+  line-height: 20px;
+  min-height: 20px;
+  margin-bottom: 3px;
+}
+
+.zan-card__right-col {
+  float: right;
+}
+
+.zan-card__left-col {
+  margin-right: 80px;
+}
+
+.head_img {
+  background-color: #0072b9;
+  height: 230rpx;
+}
+
+.gonggao {
+  color: white;
+  position: absolute;
+  margin-top: 150rpx;
+  left: 33rpx;
+  font-size: 30rpx;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.zan-cell {
+  position: relative;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.zan-cell__bd {
+  margin-top: 4px;
+  flex: 1;
+}
+
+.storeName {
+  font-weight: bold;
+  font-size: 17px;
+  position: absolute;
+  color: white;
+  left: 85px;
+  top: 6rpx;
+}
+
+.address {
+  position: absolute;
+  bottom: 30px;
+  left: 45px;
+  font-size: 30rpx;
+  /*border: 1px solid red;*/
+  width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.time {
+  position: absolute;
+  margin-top: 55rpx;
+  color: white;
+  font-size: 25rpx;
+  margin-left: -43rpx;
+}
+
+.map {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  color: white;
+  font-size: 30rpx;
+}
+
+.star {
+  position: absolute;
+  top: 40px;
+  left: 106px;
+  color: #f2a92e;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: black;
+  font-size: 13px;
+  font-style: none;
+}
+
+.right_icon {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.produce_info {
+  background-color: white;
+  border-bottom: 1px solid whitesmoke;
+  height: 85px;
+}
+
+.product_name {
+  position: absolute;
+  bottom: 30px;
+  left: 85px;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.nav {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.default {
+  line-height: 90rpx;
+  height: 90rpx;
+  text-align: center;
+  flex: 1;
+  border-right: 0px solid gainsboro;
+  color: #000;
+  font-size: 28rpx;
+}
+
+.red {
+  line-height: 90rpx;
+  text-align: center;
+  color: #0072b9;
+  flex: 1;
+  border-right: 0px solid gainsboro;
+  font-size: 30rpx;
+}
+
+.show {
+  display: block;
+  text-align: center;
+  line-height: 200rpx;
+}
+
+.hidden {
+  display: none;
+  text-align: center;
+  line-height: 200px;
+}
+
+.title {
+  font-size: 30rpx;
+  border-bottom: 1px solid whitesmoke;
+  background-color: white;
+}
+
+/*购买*/
+
+/*tab标签*/
+
+.tab-right .right-item {
+  padding-left: 15rpx;
+  display: none;
+  border-bottom: 1px solid #eee;
+}
+
+.tab-right .right-item.active {
+  display: block;
+}
+
+.tab-left {
+  float: left;
+  height: 1200px;
+  width: 21%;
+  background-color: whitesmoke;
+}
+
+#tab-hd01 {
+  height: 38px;
+  line-height: 38px;
+  font-size: 30rpx;
+  margin-top: 0px;
+  border-bottom: 1px solid white;
+  text-align: center;
+  /*background-color: #eee;*/
+}
+
+.right-item {
+  background-color: white;
+  height: 57px;
+  line-height: 57px;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.right-item image {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-top: 8px;
+}
+
+.tab-left .active {
+  color: #0072b9; 
+  background-color: white;
+  border-left: 3px solid #0072b9;
+}
+.name {
+  position: absolute;
+  width: 38%;
+  float: left;
+  font-size: 13px;
+  left: 38%;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.price {
+  position: relative;
+  float: right;
+  color: #f2a92e;
+  font-weight: bold;
+  right: 20px;
+}
+
+.assess_user {
+  position: absolute;
+  left: 50px;
+  font-size: 30rpx;
+  top: -30px;
+}
+
+.assess_stars {
+  position: absolute;
+  left: 50px;
+  font-size: 30rpx;
+  top: -15px;
+  color: #f2a92e;
+}
+
+.assess_content {
+  position: absolute;
+  left: 50px;
+  top: -1px;
+  text-align: left;
+  font-size: 30rpx;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.assess_time {
+  position: absolute;
+  font-size: 30rpx;
+  color: #888;
+  right: 10px;
+  top: -31px;
+}
+
+.tc_image {
+  float: left;
+  margin-top: 10px;
+  top: 20px;
+}
+
+.tc_name {
+  float: left;
+  left: 80px;
+  position: absolute;
+  margin-top: -30px;
+  font-size: 35rpx;
+}
+
+.tc_content {
+  text-align: left;
+  float: left;
+  font-size: 28rpx;
+  border: 0px solid red;
+  min-height: 30px;
+  line-height: 15px;
+  margin-top: 30px;
+  left: 11px;
+  width: 48%;
+  color: gray;
+  position: relative;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+.tc_price {
+  font-size: 35rpx;
+  left: 80px;
+  color: #f2a92e;
+  margin-top: 23px;
+  position: absolute;
+  font-weight: bold;
+}
+
+.buy {
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  background-color: #f2a92e;
+  font-size: 12px;
+  float: right;
+  right: 10px;
+  margin-top: 50px;
+}

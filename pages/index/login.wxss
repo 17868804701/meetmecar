@@ -1,0 +1,66 @@
+/**index.wxss**/
+.page{
+  margin-bottom: 100px;
+ display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ margin-top: 40px;
+}
+.section{
+  margin: 20px auto;
+}
+.tel{
+  /*border-radius: 5px;*/
+  margin:-90px 25px 22px 25px;
+  /*margin-top: -50px;*/
+  border-bottom:1px solid gainsboro;
+  padding: 10px 10px 0px 25px;
+  font-size: 20px;
+}
+.pwd{
+  /*padding: 10px;*/
+  /*padding-left: 38px;*/
+  /*border-radius: 5px;*/
+  /*margin:10px;*/
+  /*margin-top: -10px;*/
+  /*width: 43%;*/
+  border-bottom:1px solid gainsboro;
+    margin:19px 47% 10px 25px;
+    padding: 10px 10px 0px 25px;
+    font-size: 20px;
+    
+}
+.login{
+   color: white;
+   height: 36px;
+   line-height: 36px;
+   margin: 25px 25px 0 25px;
+   font-size: 17px;
+}
+.get_number{
+   height: 36px;
+  line-height: 36px;
+  margin: 10px;
+  margin-right: 25px;
+  width: 38%;
+  float: right;
+  color: white;
+  margin-top: -46px;
+  font-size: 12px;
+}
+.checkbox{
+   display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ margin-top: 9px;
+ float:left;
+ margin-left:12px;
+}
+.user_icon{
+width: 15px; height:15px;background-color: #eeeeee;  position: absolute;margin-top:-40px;margin-left:25px;
+}
+.code_icon{
+  width: 15px; height:15px;background-color: #eeeeee;  position: absolute;margin-top:-30px;margin-left:25px;
+}

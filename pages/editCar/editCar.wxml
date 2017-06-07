@@ -1,0 +1,19 @@
+<view class="carNo" style="margin-top:1px; margin-left:-10px;border-bottom:1px solid whitesmoke;margin-top:20px;" bindtap="edit_choose">
+  <text style="font-size:35rpx;">车型车系</text>
+  <!--<input type="text" placeholder="{{brd_name+'-'+cs_name}}" placeholder-style="font-size:14px;" value="{{brd_name+'-'+cs_name}}" bindinput="listenerCarBraNameInput" disabled='true' />-->
+  <view class="classname">{{brd_name+'-'+cs_name}}</view>
+  <text style="float:right;font-size:35rpx;">></text>
+</view>
+<view class="carNo" style="margin-top:1px; margin-left:-10px;margin-top:0px;border-bottom:1px solid whitesmoke" bindtap="edit_color">
+  <text style="font-size:35rpx;">车辆颜色</text>
+  <!--<input type="text" placeholder="{{color}}" value="{{color}}" disabled='true' placeholder-style="font-size:14px;" />-->
+   <view class="classname">{{color}}</view>
+  <text style="float:right;font-size:35rpx;">></text>
+</view>
+<view class="carNo" style="margin-top:0px">
+  <text style="font-size:35rpx;margin-left:-20px;">车牌号码</text>
+  <input type="text" value="{{carNo}}" placeholder="{{carNo}}" bindinput="listenerCarNoInput" maxlength="7" placeholder-style="font-size:14px;" />
+</view>
+<view class="section" style="margin-top:20px;">
+  <button type="default" class="r" style="background-color: #0072b9;color:white" bindtap="updateOk">确定</button>
+</view>

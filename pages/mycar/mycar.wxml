@@ -1,0 +1,23 @@
+<view class="container" wx:for="{{item}}">
+  <view class="zan-panel">
+    <view style="padding:8px 6px 4px 20px;">车牌号码：{{item.carNo}}</view>
+    <view style="padding:4px 6px 4px 20px;">车辆系列：{{item.carBrdName}}-{{item.carSerial}}</view>
+    <view style="padding:4px 6px 8px 20px;border-bottom:1px solid gainsboro">车辆颜色：{{item.carColor}}</view>
+    <view style="padding:15px 15px 15px 15px">
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio">
+          <radio value="radio" checked="{{item.isDefault =='1'}}" name='name' data-carId="{{item.carId}}" data-default="{{item.isDefault}}" bindtap="checked" style="zoom:70%;" color="#0072b9" /> <text style="margin-left:0px;margin-top:9px;">设置为默认车辆</text>
+        </label>
+      </radio-group>
+    </view>
+    <view class="section btn_price_view" style="height:20px;margin-top:-10px;">
+      <button type="default" hover-class="other-button-hover" class="delte" style="background-color: white;color:orange" bindtap="delCar" data-carid="{{item.carId}}">删除车辆</button>
+      <button type="default" hover-class="other-button-hover" class="update" style="background-color: white;color:#0072b9" bindtap="editCar" data-carid="{{item.carId}}">编辑车辆</button>
+    </view>
+  </view>
+</view>
+
+<!--添加车辆-->
+<view class="section" style="margin-top:20px;" bindtap="addcar">
+  <button type="default" class="r" style="background-color: #0072b9;color:white">添加车辆</button>
+</view>

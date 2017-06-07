@@ -1,0 +1,25 @@
+
+<!--pages/car_service/car_service.wxml-->
+<view class="header">
+  <view class="nav">
+    <image src="../image/location.png" bindtap="showmap"></image>
+    <view class="address" bindtap="showmap">{{address}}</view>
+    <text class="weather">Hi,你好！</text>
+  </view>
+  <view class="section">
+    <input text type="text" maxlength="11" placeholder="请输入门店名开始搜索" placeholder-style="font-size:12px" class="tel" value='' bindblur="searchSubmit" bindinput="search" />
+  </view>
+</view>
+<view class="zan-panel head_img" data-stNotice="{{item.stNotice}}" data-stBusinessHour="{{item.stBusinessHour}}" bindtap="store_info" wx:for="{{item}}" data-address="{{item.address}}" data-name="{{item.name}}" data-id="{{item.id}}" data-st_latitude="{{item.st_latitude}}" data-st_longitude="{{item.st_longitude}}">
+  <view class="zan-card">
+    <view class="zan-card__thumb">
+      <image class="zan-card__img" src="../image/store_logo.jpg" mode="aspectFit" style="width:60px;height:60px;margin-top:7px;"></image>
+    </view>
+    <text class="storeName">{{item.name}}</text>
+    <text class="price">地址：{{item.address}}</text>
+
+    <!--<text class="star">★★★★★|3.5</text>-->
+    <text class="time">{{item.dist}}km
+    </text>
+  </view>
+</view>

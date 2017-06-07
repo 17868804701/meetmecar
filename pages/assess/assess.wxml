@@ -1,0 +1,43 @@
+<view class="container">
+  <view class="zan-panel head_img">
+    <view class="zan-card">
+      <view class="zan-card__thumb">
+        <image class="zan-card__img" src="../image/logo.png" mode="aspectFit" style="border-radius:30px;width:60px;height:60px;margin-top:5px;"></image>
+      </view>
+      <text class="store_name">{{storename}}</text>
+      <image class="call" style="width: 25px; height:25px;"  src="../image/u168.png" bindtap="callPhone"></image>
+    </view>
+  </view>
+  <view class="price">
+     ￥{{money}}元
+  </view>
+</view>
+<view class="pingjia">
+  <view>
+    <text>匿名评价:{{str}}</text>
+  </view>
+</view>
+<view class="pingjia">
+  <text class="star" bindtap="click_1">
+  {{star1}}
+  </text>
+    <text class="star" bindtap="click_2">
+  {{star2}}
+  </text>
+    <text class="star" bindtap="click_3">
+  {{star3}}
+  </text>
+    <text class="star" bindtap="click_4">
+  {{star4}}
+  </text>
+    <text class="star" bindtap="click_5">
+  {{star5}}
+  </text>
+</view>
+<view class="input_content">
+  <input type="text" placeholder="请输入评价内容(选填)" bindinput="content" value=''/>
+</view>
+<view class="ok">
+<button bindtap="assess">立即评价</button>
+</view>
+<!--<text class="tousu" bindtap="tousu">投诉</text>-->

@@ -1,0 +1,162 @@
+<scroll-view scroll-y="true" style="height:{{windowHeight}}px;" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="search-english" id="a">
+    A
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='A'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="b">
+    B
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='B'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="c">
+    C
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='C'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="d">
+    D
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='D'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="e" hidden="true">
+    E
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='E'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="f">
+    F
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='F'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="g">
+    G
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='G'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="h">
+    H
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='H'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="i">
+    I
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='I'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="j">
+    J
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='J'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="k">
+    K
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='K'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="l">
+    L
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='L'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="m">
+    M
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='M'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="n">
+    N
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='N'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="o">
+    O
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='O'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="p">
+    P
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='P'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="q">
+    Q
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='Q'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="r">
+    R
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='C'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="s">
+    S
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='S'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="t">
+    T
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='T'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="u" hidden="true">
+    U
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='U'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="v" hidden="true">
+    V
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='V'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="w">
+    W
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='W'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="x">
+    X
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='X'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="y">
+    Y
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='Y'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+  <view class="search-english" id="z">
+    Z
+  </view>
+  <view class="search-car" data-brd_id="{{item.brd_id}}" data-brd_name="{{item.brd_name}}" wx:for="{{brd_name}}" wx:if="{{item.brd_memo=='Z'}}" bindtap="showRequire">
+    {{item.brd_name}}
+  </view>
+</scroll-view>
+<view class="index-english" style="top:{{indexTop}}px">
+  <view wx:for="{{arrId}}" wx:for-item="i" id="{{i}}" catchtouchstart="touchstart" catchtouchmove="touchmove" catchtouchend="touchend">{{i}}</view>
+</view>
+<view class="index-name" wx:if="{{indexShow}}">{{indexEnglish}}</view>

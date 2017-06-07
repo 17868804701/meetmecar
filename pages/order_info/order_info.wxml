@@ -1,0 +1,64 @@
+<!--pages/order_info/order_info.wxml-->
+<view class="main">
+  <view class="order_header">
+    <view class="time">
+      <text class="status">订单{{status}}</text>
+      <text class="order_time">{{orderTime}}</text>
+    </view>
+    <view class="store_name">
+      <text>感谢你的使用 {{storeName}}</text>
+    </view>
+  </view>
+
+  <view class="order_content" style="margin-top:5rpx;">
+    <view class="list">
+      <text class="left">{{storeName}}</text>
+      <text class="right">></text>
+    </view>
+    <view class="list" wx:for="{{item}}">
+      <text class="left">{{item.name}}</text>
+      <text class="right price">{{item.cost}}元</text>
+    </view>
+    <view class="list">
+      <text class="total_price">合计：{{totalCost}}元</text>
+    </view>
+  </view>
+
+  <view class="image" style="margin-top:5rpx;">
+    <view class="list">
+      <text class="qian">施工前照片</text>
+    </view>
+    <view class="img">
+      <view wx:if="{{beginLength==0}}" class="tip">
+        <text>---目前没有施工图片---</text>
+      </view>
+      <view wx:for="{{sgBeginList}}">
+        <image src="{{item.img_url}}"></image>
+      </view>
+    </view>
+    <view class="list" style="border:1px solid whitesmoke">
+      <text class="qian">施工后照片</text>
+    </view>
+    <view class="img">
+      <view wx:if="{{beginLength==0}}" class="tip">
+        <text>---目前没有施工图片---</text>
+      </view>
+      <view wx:for="{{sgEndList}}">
+        <image src="{{item.img_url}}"></image>
+      </view>
+    </view>
+  </view>
+  
+  <view class="order_bottom" style="margin-top:5rpx;">
+    <view class="list" style="border:1px solid whitesmoke">
+      <text class="qian">订单号码：{{orderNo}}</text>
+    </view>
+    <view class="list">
+      <text class="qian">订单时间：{{orderTime}}</text>
+    </view>
+    <view class="list">
+      <text class="qian">支付方式：{{payWay}}</text>
+    </view>
+  </view>
+  <text class="tousu" bindtap="tousu">投诉</text>
+</view>

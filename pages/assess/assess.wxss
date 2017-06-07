@@ -1,0 +1,99 @@
+/* pages/assess/assess.wxss */
+/*@import '../../assets/styles/weui.wxss';
+@import '../../assets/styles/skyvow.wxss';*/
+.zan-card {
+  margin-left: 0px;
+  width: auto;
+  padding: 5px 15px;
+  overflow: hidden;
+  position: relative;
+  font-size: 14px;
+}
+page{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: black;
+  background-color:white;
+}
+.head_img{
+  background-color: white;
+  margin-top: 10px;
+  height: 80px;
+  border: 1px solid whitesmoke;
+}
+/*.phone{
+    float: right;
+    margin-top:-20px;
+}*/
+.price{
+   font-size: 17px;
+   color: #f2a92e;
+   line-height:130px;
+    display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ border-bottom: 1px solid gainsboro
+}
+.pingjia{
+display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ margin-top:20px;
+ background-color: white;
+ font-size: 40rpx;
+}
+.tousu{
+ display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
+ color: #0072b9;
+}
+.store_name{
+  position: absolute;
+  top:27px;
+  left: 90px;
+  width: 50%;
+  font-size: 40rpx;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.call{
+  position: absolute;
+  right: 30px;
+  top: 24px;
+}
+.star{
+  color: #f2a92e;
+  font-size: 60rpx;
+  margin-left: 5px;
+}
+.ok button{
+  width: 80%;
+  height: 38px;
+  line-height: 38px;
+  color: white;
+  font-size: 35rpx;
+  margin-top: 40px;
+  background-color: #f2a92e;
+}
+.input_content input{
+  border: 1px solid gainsboro;
+  height: 30px;
+  border-radius: 5px;
+  line-height: 30px;
+  width: 70%;
+  padding-left: 10px;
+
+}
+.input_content{
+   display:flex;
+ flex-direction:row;
+ justify-content: center;
+ align-items: center;
+ margin-top: 20px;
+}

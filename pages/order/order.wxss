@@ -1,0 +1,84 @@
+/* pages/order/order.wxss */
+/* pages/mycar/mycar.wxss */
+.zan-panel {
+  background: #fff;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.zan-panel-title {
+  font-size: 14px;
+  line-height: 1;
+  color: #999;
+  padding: 20px 15px 0 15px;
+}
+.zan-panel--without-margin-top {
+  margin-top: 0;
+}
+page{
+    background-color: whitesmoke;
+    font-size: 30rpx;
+}
+.pay{
+    font-size: 13px;
+    width: 95px;
+    line-height: 38px;
+    height: 38px;
+    float: right;
+    margin-top: -26px;
+    border:1px solid oragne;
+    color: #459ae9;
+}
+.assess{
+     font-size: 16px;
+    width: 95px;
+    line-height: 38px;
+    height: 38px;
+    float: right;
+    margin-top: -28px;
+    border:1px solid #0072b9;
+    color: #459ae9;
+}
+.info{
+     font-size: 16px;
+    width: 95px;
+    line-height: 38px;
+    height: 38px;
+    float: right;
+
+    margin-top: -29px;
+    border:1px solid #0072b9;
+    color: #459ae9;
+}
+.zan-panel{
+    margin-top: 20px;
+}
+.radio-group{
+    margin-left: 10px;
+}
+.price{
+    color: orange;
+    font-size: 18px;
+    margin-left:40px;
+}
+.address{
+    float:right;right:10px;
+}
+.follow{
+    width: 105px;
+    height: 35px;
+}
+.none{
+flex-direction:row;
+justify-content: space-around;
+ align-items: center;
+ text-align: center;
+ margin-top: 100px;
+ color: #888;
+ background-color: white;
+ height: 100px;
+ line-height: 100px;
+ width: 80%;
+ margin-left: 10%
+}

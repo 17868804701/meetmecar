@@ -1,0 +1,66 @@
+<view class="container">
+  <!--头像-->
+  <view class="zan-panel head_img" bindtap="person">
+    <view class="zan-card">
+      <view class="zan-card__thumb">
+        <image class="zan-card__img user_img" src="{{imgurl}}" mode="aspectFit"></image>
+      </view>
+     <text class="name">{{name}}</text>
+      <text class="tel">{{phone}}</text>
+      <text class="vip">{{grade}}</text>
+      <text class="right_icon">></text>
+</view>
+</view>
+<!--账户余额-->
+  <view class="zan-panel">
+    <view class="zan-cell" bindtap="chongzhi">
+      <view class="zan-cell__bd">
+        <image class="zan-card__img price_img" src="../image/zhye.png" mode="aspectFit"></image>账户余额：<text style="color:#f2a92e;">{{balance}}元</text>
+        <text style="float:right;color:#0072b9">充值</text>
+      </view>
+    </view>
+<!--我的卡包-->
+    <view class="zan-cell" bindtap="my_card">
+      <view class="zan-cell__bd">
+        <image class="zan-card__img rmb_img" src="../image/kb.png" mode="aspectFit"></image>我的卡包
+      </view>
+    </view>
+<!--我的订单-->
+    <view class="zan-cell" bindtap="order">
+      <view class="zan-cell__bd ">
+        <image class="zan-card__img order_img" src="../image/dd.png" mode="aspectFit"></image>我的订单
+      </view>
+    </view>
+<!--账户明细-->
+    <view class="zan-cell" bindtap="account_info">
+      <view class="zan-cell__bd">
+        <image class="zan-card__img info_img" src="../image/zhmx.png" mode="aspectFit"></image>账户明细
+      </view>
+    </view>
+<!--我的车辆-->
+    <view class="zan-cell" bindtap="mycar">
+      <view class="zan-cell__bd">
+        <image class="zan-card__img car_img" src="../image/wodecl.png" mode="aspectFit"></image>我的车辆
+      </view>
+    </view>
+<!--客服电话-->
+    <view class="zan-cell" bindtap="call_phone">
+      <view class="zan-cell__bd">
+        <image class="zan-card__img phone_img" src="../image/kefu.png" mode="aspectFit" style=""></image>客服电话
+    <text style="float:right;color:#f2a92e" >400-009-0906</text>
+      </view>
+    </view>
+<!--紧急救援-->
+    <view class="zan-cell"  bindtap="help">
+      <view class="zan-cell__bd">
+        <image class="zan-card__img set_img" src="../image/jy.png" mode="aspectFit"></image>紧急救援
+      </view>
+    </view>
+<!--退出登录-->
+    <view class="zan-cell" bindtap="loginOut" >
+      <view class="zan-cell__bd">
+        <image class="zan-card__img updown" src="../image/tc.png" mode="aspectFit" style=""></image>退出登录
+      </view>
+    </view>
+    </view>
+</view>

@@ -1,0 +1,14 @@
+<!--卡卷-->
+<view class="none" wx:if="{{length==0}}">
+---    您还没有卡券    ---
+</view>
+<view class="container" wx:for="{{item}}">
+  <view class="zan-panel">
+    <view style="padding:13px 6px 13px 20px;border-bottom:1px solid gainsboro">{{item.title}}<button class="follow" style="float:right;margin-right:5px;height:30px;width:105px;line-height:30px;font-size:12px;margin-top:-8px;border:0;background-color:#0072b9;color:white"  data-stLatitude="{{item.stLatitude}}" data-stLongitude="{{item.stLongitude}}" bindtap="showMap">导航至门店</button></view>
+    <view style="padding:8px 6px 4px 20px;">有效期至：{{item.expireTime}}</view>
+    <view style="padding:4px 6px 8px 20px;border-bottom:1px dashed #eee">订单状态：{{item.status}}</view>
+    <view style="padding:4px 15px 4px 5px">
+     <text class="title_left">仅限{{item.storeName}}使用</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="carNo" style="margin-top:20px;">
+  <input type="number" placeholder-style="font-size:14px;" placeholder="请输入新的手机号" bindinput="listenerPhoneInput" placeholder-style="font-size:12px;" class="phone" maxlength="11" value='' />
+</view>
+<view class="carNo" style="margin-top:0px;">
+  <input type="number" placeholder-style="font-size:14px;" placeholder="请输入验证码" bindinput="listenerCodeInput" placeholder-style="font-size:12px;" class="code" maxlength="6" value='' />
+  <button class="get_number" hidden="{{selected1}}" bindtap="get_phoneNumber" class="get_number">{{second}}s后重新获取</button>
+  <button hidden="{{selected}}"  class="get_number" bindtap="get_phoneNumber" class="get_number">获取验证码</button>
+</view>
+<view class="section" style="margin-top:20px;">
+  <button type="default" class="r" style="background-color: #0072b9;color:white;margin-bottom:20px;font-size:15px" bindtap="update">确定更换手机号</button>
+</view>
