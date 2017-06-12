@@ -38,7 +38,7 @@ Page({
             })
             // 判断opendid是否存在
             wx.request({
-              url: getApp().data.url +'/ws/business/loginCheck',
+              url: getApp().data.url + '/ws/business/loginCheck',
               data: { "params": { "openId": res.data.openid } },
               method: 'POST',
               header: {
@@ -170,7 +170,7 @@ Page({
       })
       //发起网络请求
       wx.request({
-        url: getApp().data.url +'/ws/business/phoneCodeQry/',
+        url: getApp().data.url + '/ws/business/phoneCodeQry/',
         method: 'POST',
         data: { "params": { "openId": getApp().data.openId, "phoneNum": phone } },
         header: {
@@ -197,6 +197,8 @@ Page({
     console.log(code);
     console.log(this.data.sex);
     console.log(this.data.nickName);
+    var sex = this.data.sex;
+    var nickName = this.data.nickName;
 
     var that = this;
     // 登录验证
@@ -210,12 +212,12 @@ Page({
           }
         }
       })
-    } else {
+    }else{
       wx.request({
-        url: getApp().data.url +'/ws/business/login',
+        url: getApp().data.url + '/ws/business/login',
         method: 'POST',
         data: {
-          "params": { "openId": getApp().data.openId, "phoneNum": phone, "vcode": code, "sex": this.data.sex, "name": this.data.nickName }
+          "params": { "openId": getApp().data.openId, "phoneNum": phone, "vcode": code, "sex": sex, "name": nickName }
         },
         header: {
           'content-type': 'application/json'
