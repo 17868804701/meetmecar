@@ -33,7 +33,7 @@
         <text>---目前没有施工图片---</text>
       </view>
       <view wx:for="{{sgBeginList}}">
-        <image src="{{item.img_url}}"></image>
+        <image src="{{item.img_url}}" bindtap="show_img"></image>
       </view>
     </view>
     <view class="list" style="border:1px solid whitesmoke">
@@ -44,7 +44,7 @@
         <text>---目前没有施工图片---</text>
       </view>
       <view wx:for="{{sgEndList}}">
-        <image src="{{item.img_url}}"></image>
+        <image src="{{item.img_url}}" bindtap="show_img2"></image>
       </view>
     </view>
   </view>
